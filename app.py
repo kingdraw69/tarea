@@ -6,17 +6,9 @@ from PIL import Image
 
 
 
-
-with st.sidebar:
-    st.title("Entrenamiento de Modelo YOLOv8")
-    st.subheader("Detección de equipos de protección y personas")
-    st.write("Sube una imagen o utiliza la cámara para realizar la detección de objetos como botas, guantes, cascos, chalecos y personas.")
-
-
 st.title("Universidad Autónoma de Bucaramanga - UNAB")
 st.header('Aplicación para la detección de objetos con YOLOv8')
 
-# Descripción de la aplicación
 with st.container():
     st.subheader("Detección de Equipos de Protección Personal (EPP)")
     st.write("Desarrollado por Ivan Tarazona Rios. Esta aplicación permite detectar botas, guantes, cascos, chalecos y personas utilizando un modelo YOLOv8 entrenado para estas clases.")
