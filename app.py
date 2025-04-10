@@ -4,13 +4,7 @@ from ultralytics import YOLO
 import numpy as np
 from PIL import Image
 
-# Configuración de la página de Streamlit
-st.set_page_config(page_title="Detección de Objetos - YOLOv8",
-                   page_icon="icono.png", 
-                   layout="wide", 
-                   initial_sidebar_state="expanded")
 
-# Estilo para ocultar ciertos elementos de Streamlit
 ocultar_elementos_streamlit = """
     <style>
     #MainMenu {visibility: hidden;}
