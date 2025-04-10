@@ -54,14 +54,14 @@ st.markdown("<h2 style='text-align: center;'>Sube una imagen o captura una foto 
 model = YOLO("best.pt")
 try:
     model = YOLO("best.pt")
-    st.success("✅ Modelo cargado correctamente")
+    st.success("Modelo cargado correctamente")
 except Exception as e:
-    st.error("❌ Error al cargar el modelo")
+    st.error("Error al cargar el modelo")
     st.exception(e)
     st.stop()
 
 # Opciones de entrada (cámara o subir imagen)
-opcion = st.radio("Selecciona el método de entrada", ("📸 Cámara", "🖼️ Subir imagen"))
+opcion = st.radio("Selecciona el método de entrada", ("Cámara", "Subir imagen"))
 
 # Función para mostrar los resultados de detección
 def mostrar_resultado(imagen):
@@ -72,19 +72,19 @@ def mostrar_resultado(imagen):
     st.image(pred, caption="Resultado de la Detección", use_container_width=True)
 
 # Opción para capturar imagen desde la cámara
-if opcion == "📸 Cámara":
+if opcion == "Cámara":
     img_file_buffer = st.camera_input("Captura una foto para detectar objetos")
     if img_file_buffer is None:
         st.info("Por favor, captura una foto.")
     else:
         image = Image.open(img_file_buffer)
-        st.subheader("📸 Imagen capturada")
+        st.subheader("Imagen capturada")
         st.image(image, caption="Imagen capturada", use_container_width=True)
-        st.subheader("🔍 Resultado de la detección")
+        st.subheader("Resultado de la detección")
         mostrar_resultado(image)
 
 # Opción para subir una imagen
-elif opcion == "🖼️ Subir imagen":
+elif opcion == "Subir imagen":
     uploaded_file = st.file_uploader("Sube una imagen para detectar objetos", type=["jpg", "jpeg", "png"])
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
