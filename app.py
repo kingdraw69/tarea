@@ -21,7 +21,6 @@ st.markdown(ocultar_elementos_streamlit, unsafe_allow_html=True)
 
 # Sidebar con información y ejemplo
 with st.sidebar:
-    st.image('Objetos.png', caption='Ejemplo de objetos a detectar', use_container_width=True)
     st.title("Entrenamiento de Modelo YOLOv8")
     st.subheader("Detección de equipos de protección y personas")
     st.write("Sube una imagen o utiliza la cámara para realizar la detección de objetos como botas, guantes, cascos, chalecos y personas.")
