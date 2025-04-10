@@ -40,11 +40,6 @@ with st.container():
     st.subheader("Detección de Equipos de Protección Personal (EPP)")
     st.write("Desarrollado por Paula Betina Reyes. Esta aplicación permite detectar botas, guantes, cascos, chalecos y personas utilizando un modelo YOLOv8 entrenado para estas clases.")
 
-# Enlace a Google Colab
-with st.container():
-    st.subheader("Entrenamiento en Google Colab")
-    st.write("Puedes acceder al modelo entrenado y las librerías desde el siguiente enlace:")
-    st.markdown("[Enlace al Google Colab](https://colab.research.google.com/drive/11pruICJyx5VFHeWBX_wklpTmNKDprzcX?usp=sharing)")
 
 # Subtítulo visual centralizado
 st.markdown("<h2 style='text-align: center;'>Sube una imagen o captura una foto para detectar objetos.</h2>", unsafe_allow_html=True)
