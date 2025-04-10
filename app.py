@@ -5,22 +5,13 @@ import numpy as np
 from PIL import Image
 
 
-ocultar_elementos_streamlit = """
-    <style>
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    </style>
-"""
-st.markdown(ocultar_elementos_streamlit, unsafe_allow_html=True)
 
-# Sidebar con información y ejemplo
+
 with st.sidebar:
     st.title("Entrenamiento de Modelo YOLOv8")
     st.subheader("Detección de equipos de protección y personas")
     st.write("Sube una imagen o utiliza la cámara para realizar la detección de objetos como botas, guantes, cascos, chalecos y personas.")
 
-# Imagen principal
-st.image('logo.png', use_container_width=True)
 
 # Información adicional sobre el autor
 st.markdown('<h4 style="font-size: 16px;">Desarrollado por: Ivan Tarazona</h4>', unsafe_allow_html=True)
