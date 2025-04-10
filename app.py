@@ -29,7 +29,7 @@ with st.sidebar:
 st.image('logo.png', use_container_width=True)
 
 # Información adicional sobre el autor
-st.markdown('<h4 style="font-size: 16px;">Desarrollado por: Paula Betina Reyes Anaya</h4>', unsafe_allow_html=True)
+st.markdown('<h4 style="font-size: 16px;">Desarrollado por: Ivan Tarazona</h4>', unsafe_allow_html=True)
 
 # Título de la aplicación
 st.title("Universidad Autónoma de Bucaramanga - UNAB")
@@ -38,7 +38,7 @@ st.header('Aplicación para la detección de objetos con YOLOv8')
 # Descripción de la aplicación
 with st.container():
     st.subheader("Detección de Equipos de Protección Personal (EPP)")
-    st.write("Desarrollado por Paula Betina Reyes. Esta aplicación permite detectar botas, guantes, cascos, chalecos y personas utilizando un modelo YOLOv8 entrenado para estas clases.")
+    st.write("Desarrollado por Ivan Tarazona Rios. Esta aplicación permite detectar botas, guantes, cascos, chalecos y personas utilizando un modelo YOLOv8 entrenado para estas clases.")
 
 
 # Subtítulo visual centralizado
