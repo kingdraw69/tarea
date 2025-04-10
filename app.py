@@ -27,13 +27,6 @@ st.markdown("<h2 style='text-align: center;'>Sube una imagen o captura una foto 
 
 # Cargar el modelo YOLOv8 previamente entrenado
 model = YOLO("best.pt")
-try:
-    model = YOLO("best.pt")
-    st.success("Modelo cargado correctamente")
-except Exception as e:
-    st.error("Error al cargar el modelo")
-    st.exception(e)
-    st.stop()
 
 # Opciones de entrada (cámara o subir imagen)
 opcion = st.radio("Selecciona el método de entrada", ("Cámara", "Subir imagen"))
