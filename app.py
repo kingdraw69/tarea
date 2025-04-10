@@ -13,10 +13,6 @@ with st.sidebar:
     st.write("Sube una imagen o utiliza la cámara para realizar la detección de objetos como botas, guantes, cascos, chalecos y personas.")
 
 
-# Información adicional sobre el autor
-st.markdown('<h4 style="font-size: 16px;">Desarrollado por: Ivan Tarazona</h4>', unsafe_allow_html=True)
-
-# Título de la aplicación
 st.title("Universidad Autónoma de Bucaramanga - UNAB")
 st.header('Aplicación para la detección de objetos con YOLOv8')
 
